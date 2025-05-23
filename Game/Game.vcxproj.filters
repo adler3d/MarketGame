@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Project">
+      <UniqueIdentifier>{6d7f8b5d-16f8-4fd8-9d22-9071efb1a54f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Header">
+      <UniqueIdentifier>{7fe00c32-8a6d-432b-bf20-66db6c7fb085}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Project\Entity">
+      <UniqueIdentifier>{87c12a0f-2cfe-4bb0-93bb-1759991d6521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QapEngine">
+      <UniqueIdentifier>{2dac9b55-a8eb-42ea-9525-01205d6db2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QapEngine\Header">
+      <UniqueIdentifier>{4d31953e-a288-42a0-bba7-29586943c028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QapEngine\Source">
+      <UniqueIdentifier>{1cde0a17-401a-46ae-9e12-0ba136bbc2fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QapEngine\Macro">
+      <UniqueIdentifier>{5d73b03e-5a51-4d0b-ac3d-bcac0ec71ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Inline">
+      <UniqueIdentifier>{9d9fd6fb-bb88-47a7-81b5-fb57c1100623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Project\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QapEngine\QapDX.cpp">
+      <Filter>QapEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QapEngine\QapEntity.cpp">
+      <Filter>QapEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QapEngine\QapInput.cpp">
+      <Filter>QapEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QapEngine\QapIO.cpp">
+      <Filter>QapEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QapEngine\QapMatrix.cpp">
+      <Filter>QapEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QapEngine\QapProClass.cpp">
+      <Filter>QapEngine\Macro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QapEngine\QapSys.cpp">
+      <Filter>QapEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Project\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main.h">
+      <Filter>Project\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Project\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\NakedIO.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapClock.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapDev.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapDX.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapEntity.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapGDI.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapInput.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapIO.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapMatrix.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapVec.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapScene.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapSys.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapTools.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapType.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GeomTools.h">
+      <Filter>Project\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapAssert.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QapEngine\QapPool.h">
+      <Filter>QapEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRender.hpp">
+      <Filter>Project\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="QapAtlas.hpp">
+      <Filter>Project\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\voronoi.h">
+      <Filter>Project\Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\QapEngine\QapProTweak.inl">
+      <Filter>QapEngine\Macro</Filter>
+    </None>
+    <None Include="LevelPack.inl">
+      <Filter>Project\Inline</Filter>
+    </None>
+    <None Include="GameMenu.inl">
+      <Filter>Project\Inline</Filter>
+    </None>
+    <None Include="Entity.inl">
+      <Filter>Project\Entity</Filter>
+    </None>
+  </ItemGroup>
+</Project>
