@@ -1,6 +1,6 @@
-const int BeforeBuildCount=812;
-const int AfterBuildCount=593;
-//<PreTimeStamp>67553213</PreTimeStamp>//
+const int BeforeBuildCount=813;
+const int AfterBuildCount=594;
+//<PreTimeStamp>50565562</PreTimeStamp>//
 #ifdef ALL_BUILD_INFO
 std::string GetBuildHistory(int ver){
   #define BEF(DATA,TIME,BBUILD,ABUILD)
@@ -1411,6 +1411,8 @@ BEF(23.05.2025,17:06:06:829,811,591);
 AFT(23.05.2025,17:06:12:627,811,592);
 BEF(23.05.2025,17:49:02:141,812,592);
 AFT(23.05.2025,17:49:08:896,812,593);
+BEF(23.05.2025,19:06:25:889,813,593);
+AFT(23.05.2025,19:06:30:945,813,594);
 //<<-=-//
   #undef BEF
   #undef AFT

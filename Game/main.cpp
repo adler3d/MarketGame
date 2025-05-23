@@ -360,6 +360,7 @@ public:
     Menu->Add("About",&OnAbout);
     Menu->Add("Exit",&OnExit);
     LevelCounter.Value=0;
+    update_user_name();
     RestartLevel();
     Menu->Down();
     //Menu->Up();
@@ -394,14 +395,17 @@ public:
   bool check_char(char c){
     return InDip('a',c,'z')||InDip('A',c,'Z')||InDip('à',c,'ÿ')||InDip('À',c,'ß')||InDip('0',c,'9')||c=='¸'||c=='¨';
   }
+  void update_user_name(){
+    user_name=file_get_contents(user_name_fn);
+    string un;
+    for(auto&c:user_name)if(check_char(c))un.push_back(c);
+    user_name=un;
+  }
+  string user_name_fn="user_name.txt";
   void InputUserNameUpdate(){
-    auto fn="user_name.txt";
     if(need_init){
       need_init=false;
-      user_name=file_get_contents(fn);
-      string un;
-      for(auto&c:user_name)if(check_char(c))un.push_back(c);
-      user_name=un;
+      update_user_name();
       user_name_scene=user_name.empty();
     }
     if(QapInput::News){
@@ -412,7 +416,7 @@ public:
     if(QapInput::Down[VK_RETURN]){
       if(user_name.size()){
         user_name_scene=false;
-        file_put_contents(fn,user_name);
+        file_put_contents(user_name_fn,user_name);
       }
     }
   }
