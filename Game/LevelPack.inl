@@ -206,7 +206,7 @@ public:
   string ref="github";
   void reinit_top20(){
     tops={};
-    auto s=TGame::wget(TGame::get_host(),"/c/game_players_table.js?unique&csv&game=market&n=20&ref="+ref);
+    auto s=TGame::wget(TGame::get_host(),"/c/game_players_table.js?unique&csv&game=market&n=20&ref="+ref+"&user="+Game->user_name);
     auto arr=split(s,"\n");
     if(arr.size())QapPopFront(arr);
     for(auto&ex:arr){
